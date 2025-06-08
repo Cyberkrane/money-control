@@ -1,3 +1,15 @@
-<h1 class="text-center">money-control version 1.0.0</h1>
+<div class="container">
 
-<money-table></money-table>
+  <div class="d-flex justify-content-center align-items-baseline border border-primary px-2 rounded m-1 shadow">
+    <h1>{{ title | titlecase }}</h1>
+    <div class="col"></div>
+    <span> version: {{ version }} </span>
+  </div>
+
+  <div class="d-flex justify-content-end border border-primary p-2 rounded m-1 shadow">
+    <money-dropdown [categories]="categories"></money-dropdown>
+  </div>
+<div class="border border-primary p-2 rounded m-1 shadow">
+  <money-table [buys]="buys"></money-table>
+</div>
+</div>

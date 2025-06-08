@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MoneyControlRoutingModule } from './money-control-routing.module';
 import { MoneyControlComponent } from './money-control/money-control.component';
 import { MoneyTableComponent } from './components/money-table/money-table.component';
+import { MoneyDropdownComponent } from './components/money-dropdown/money-dropdown.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MoneyTableComponent } from './components/money-table/money-table.compon
   ],
   imports: [
     CommonModule,
-    MoneyControlRoutingModule
+    MoneyControlRoutingModule,
+    MoneyDropdownComponent
   ]
 })
 export class MoneyControlModule { }
