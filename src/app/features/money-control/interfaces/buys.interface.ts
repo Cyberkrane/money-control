@@ -1,8 +1,8 @@
-import { CategoryKey } from "../constants/category.constants";
+import { CategoryValue } from "../constants/category.constants";
 
 export interface Buys {
   id: string;
-  name: string;
-  category: CategoryKey;
+  description: string;
+  category: CategoryValue;
   price: number;
 }
