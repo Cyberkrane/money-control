@@ -10,14 +10,25 @@ import { Buys } from '../../interfaces/buys.interface';
 export class MoneyTableComponent {
 
   //TODO: convertir este componente en un componente reutilizable de tipo presentacional
-@Input() 
-public headers: string[] = [] ;
-@Input() 
-public items: Buys[] = [] ;
+  @Input()
+  public headers: string[] = [];
+
+  @Input()
+  public items: Buys[] = [];
+
+  public editBuy: string = 'Editar la compra de: ';
+  public removeBuy: string = 'Eliminar la compra de: ';
 
 
-getTotal(): string|number {
-  return this.items.reduce((acc, item) => acc + item.price, 0);
-}
+  getTotal(): string | number {
+    return this.items.reduce((acc, item) => acc + item.price, 0);
+  }
+  updateBuy(_t12: number) {
+    throw new Error('Method not implemented.');
+  }
+
+  deleteBuy(_t12: number) {
+    throw new Error('Method not implemented.');
+  }
 
 }

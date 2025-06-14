@@ -5,4 +5,5 @@ export interface Buys {
   description: string;
   category: CategoryValue;
   price: number;
+  date: Date;
 }

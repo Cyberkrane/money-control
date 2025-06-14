@@ -13,7 +13,31 @@
       </td>
       <td>{{ item.description }}</td>
 
+      <td>{{ item.date | date }}</td>
+
       <td>{{ item.price | currency }}</td>
+
+      <td class="d-flex justify-content-end">
+        <button
+          type="button"
+          class="btn btn-outline-primary me-2"
+          (click)="updateBuy(i)"
+      
+          title="{{ editBuy }} {{ item.description }}"
+        >
+          <i class="bi bi-pencil-fill"></i>
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          (click)="deleteBuy(i)"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="{{ removeBuy }} {{ item.description }}"
+        >
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
